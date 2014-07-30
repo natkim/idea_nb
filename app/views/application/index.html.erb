@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset2">
+        
+        <h1>Ideas:</h1>
+            <ul>
+              <% @i.each do |idea| %>  
+                <li><%= idea.name %></li> 
+                   <a href="/idea/ <%= idea.id %>">show</a> |
+                   <a href="/idea/ <%= idea.id %> /edit">edit</a> |
+                   <a href="/idea/ <%= idea.id %> /destroy">delete</a> 
+              <% end %>
+            </ul>
+            <br>
+            <a href="http://rails-test-131294.use1-2.nitrousbox.com/new_idea">Wanna Create another Idea?</a>
+        
+      </div>
+    </div>
+  </div>
+

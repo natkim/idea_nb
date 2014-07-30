@@ -1,0 +1,7 @@
+<h1> Edit Idea</h1>
+
+<form action="/update_idea/:id <@= i.id %>">
+  <input type="text" name="name" placeholder="Enter Name" value="<%= @i.name %>">
+  <input type="text" name="description" placeholder="Enter Description" value="<%= @i.description %>">
+  <input type="submit">
+</form>
