@@ -16,9 +16,8 @@ class ApplicationController < ActionController::Base
     i.name = params['name']
     i.description = params['description']
     i.save
-    redirect_to "/idea/#{i.id}"
+    redirect_to "/ideas/#{i.id}"
   end
-  
   
   def edit
     @i = Idea.find_by_id(params['id'])
@@ -27,9 +26,9 @@ class ApplicationController < ActionController::Base
   def update
     i = Idea.find_by_id(params['id'])
     i.name = params['name']
-    i.description = params ['description']
+    i.description = params['description']
     i.save
-    redirect_to "/idea/#{p.id}"
+    redirect_to "/ideas/#{ i.id }"
   end
   
   def destroy

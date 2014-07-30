@@ -6,8 +6,8 @@
             <ul>
               <% @i.each do |idea| %>  
                 <li><%= idea.name %></li> 
-                   <a href="/idea/ <%= idea.id %>">show</a> |
-                   <a href="/idea/ <%= idea.id %> /edit">edit</a> |
+                   <a href="/ideas/ <%= idea.id %>">show</a> |
+                   <a href="/ideas/ <%= idea.id %> /edit">edit</a> |
                    <a href="/idea/ <%= idea.id %> /destroy">delete</a> 
               <% end %>
             </ul>

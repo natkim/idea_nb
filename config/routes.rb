@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     get '/create_idea' => 'application#create'
   
   #Reading
-    get '/idea/:id' => 'application#show'
+    get '/ideas/:id' => 'application#show'
     get '/ideas' => 'application#index'
   
   
